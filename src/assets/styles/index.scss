@@ -1,0 +1,18 @@
+@import 'normalize.css';
+@import './variables.css';
+
+// 移动端项目
+// 设计尺寸：375 414 750 1125 ...
+//  vw视口100vw=满视口 rem根元素字体大小
+html {
+  // 视口宽度375rem
+  font-size: calc(100vw/375);
+}
+
+// body的背景颜色会自动传给html；
+// 由于html字体设置过小，所以给body设置一下字体
+body{
+  font: 12px 'Microsoft YaHei';
+  color: var(--primary-color);
+}
+
