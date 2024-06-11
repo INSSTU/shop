@@ -1,3 +1,7 @@
 html {
+
+  /* 底部导航的高度 */
+  --bottom-nav-height: 60rem;
+  
   --primary-color: #242424;
 }

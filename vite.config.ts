@@ -34,6 +34,7 @@ export default defineConfig({
       ], */
     }),
     Components({
+      dirs: ['./src/components', './src/layout'],  //默认的自动导入，只在components里。其他文件需要手动添加。
       dts: "./src/types/components.d.ts", //用来区分组件与标签
     }), //上面不加 vite 这里会报错
   ],
