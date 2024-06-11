@@ -3,8 +3,10 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// 导入自动导包的插件
+// 导入自动导包的插件( 注意:加 vite )
 import AutoImport from "unplugin-auto-import/vite"
+// 导入自动导vue组件的插件( 注意:加 vite )
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -31,6 +33,9 @@ export default defineConfig({
         'pinia',
       ], */
     }),
+    Components({
+      dts: "./src/types/components.d.ts", //用来区分组件与标签
+    }), //上面不加 vite 这里会报错
   ],
   resolve: {
     alias: {

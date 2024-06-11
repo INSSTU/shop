@@ -5,6 +5,7 @@ const newCount = computed(() => count.value + 3)
 
 <template>
   <h1>Hello vue -- {{ count }} -- {{ newCount }} </h1>
+  <Hello></Hello>
 </template>
 
 <style scoped></style>
