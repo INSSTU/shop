@@ -1,7 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>Hello Vue</h1>
+  <!-- 
+   1.主页 商品列表
+   2.搜索页
+   3.购物车
+   4.用户信息
+   -->
+  <router-view></router-view>
 </template>
 
 <!-- 
