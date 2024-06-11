@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import UnpluginSvgComponent from 'unplugin-svg-component/vite'
 
 // 导入自动导包的插件( 注意:加 vite )
 import AutoImport from "unplugin-auto-import/vite"
@@ -11,6 +12,12 @@ import Components from 'unplugin-vue-components/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    UnpluginSvgComponent({
+      iconDir:["./src/assets/svg"],
+      dts:true,
+      dtsDir:"./src/types",
+      prefix: 'icon',
+    }),
     vue(),
     AutoImport({
       // imports用来指定需要自动导入的包(第三方的)
