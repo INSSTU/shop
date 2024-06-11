@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>用户信息</h1>
+  <div>用户信息</div>
 </template>
 
 <style lang="scss" scoped></style>

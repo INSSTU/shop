@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>购物车</h1>
+  <div>购物车</div>
 </template>
 
 <style lang="scss" scoped></style>
