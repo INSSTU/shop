@@ -13,7 +13,7 @@ interface Product{
 interface Page<T>{
   data: Array<T>
   totalItems: number  //总记录数
-  totalPage: number  //总页数
+  totalPages: number  //总页数
   currentPage: number  //当前页码
   itemsPerPages: number  //每页显示的商品数
 }

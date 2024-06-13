@@ -21,7 +21,9 @@ export default defineConfig({
     vue(),
     AutoImport({
       // imports用来指定需要自动导入的包(第三方的)
-      imports:['vue', 'vue-router', 'pinia'],
+      imports:['vue', 'vue-router', 'pinia', {
+        '@vueuse/core': ['createFetch'],
+      }],
 
       // 自动生成类型描述文件，让TS对这些导入有更好的支持
       dts:"./src/types/auto-imports.d.ts",
